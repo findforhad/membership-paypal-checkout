@@ -112,17 +112,6 @@ module.exports = ({ payerID, paymentID, paymentToken, address, email }) => {
           <hr />
   
           <h4 style="margin: 0">Details</h4>
-          <div class="break-d">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="other-rates clearfix">
-                  <dl class="dl-horizontal clearfix no-border">
-                    <dt class="blue">Total</dt>
-                    <dd style="color:#055f05;font-size: 22px;">$1234424</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="break-d">
             <p>
