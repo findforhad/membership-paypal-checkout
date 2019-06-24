@@ -1,7 +1,6 @@
 const express = require("express");
 const pdf = require("html-pdf");
 const document = require("./documents");
-const paypal = require("paypal-rest-sdk");
 const app = express();
 
 app.use(express.json());
