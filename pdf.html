@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Invoice</title>
+  </head>
+  <style>
+    .print-container {
+      max-width: 800px;
+      margin: auto;
+      font-family: serif;
+      border: 2px solid #e05d30;
+      padding: 20px;
+    }
+    .print-container .header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #dbdbdb;
+      padding-bottom: 20px;
+    }
+
+    .print-container .ft-18 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .print-container .adder {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: right;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    .print-container .total {
+      font-size: 22px;
+    }
+    .print-container .mega {
+      font-size: 33px;
+      margin-bottom: 10px;
+    }
+
+    .invoice-logo {
+      height: 200px;
+      width: auto;
+    }
+
+    .other-rates {
+      float: right;
+    }
+    .other-rates dl {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    .other-rates dl.total {
+      border-top: 1px solid #dbdbdb;
+      padding-top: 10px;
+    }
+    .other-rates dt {
+      width: 50%;
+      float: left;
+    }
+    .other-rates dd {
+      width: 50%;
+      float: left;
+      padding-right: 10px;
+      margin: 0;
+    }
+    .invoice-from {
+      float: right;
+    }
+  </style>
+  <body>
+    <div class="print-container clearfix" style="margin-top: 50px;">
+      <div class="header">
+        <div class="content">
+          <table style="width:100%">
+            <tr style="width:80%" class="heading">
+              <td colspan="3">
+                <img
+                  class="invoice-logo"
+                  src="https://upload.wikimedia.org/wikipedia/en/0/01/Filemobile-F-Logo-Hulford.png"
+                  alt=""
+                />
+              </td>
+              <td class="text-right">
+                <div class="invoice-from" style="max-width:400px">
+                  <h2 class="mega">INVOICE</h2>
+                  <h3 class="grey">DevForhad.io</h3>
+                  <p>Open Source Software Solution Center.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="body">
+        <h4 style="margin: 0">Summary</h4>
+        <div class="summary-info">
+          <p><strong>Recipient Name: </strong></p>
+          <p>City:</p>
+          <p>State:</p>
+          <p>Postal Code:</p>
+          <small>Email: </small>
+          <br />
+          <small>Location: </small>
+        </div>
+        <hr />
+
+        <h4 style="margin: 0">Details</h4>
+        <div class="break-d">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="other-rates clearfix">
+                <dl class="dl-horizontal clearfix no-border">
+                  <dt class="blue">Total</dt>
+                  <dd style="color:#055f05;font-size: 22px;">$1234424</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="break-d">
+          <p>
+            <strong>Payment ID:</strong> DevForhad.io
+            <br />
+            <strong>Invoice No:</strong> 12356633
+            <br />
+            <strong>Date :</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

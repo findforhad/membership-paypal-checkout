@@ -1,0 +1,21 @@
+{
+  "name": "paypal-checkout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "html-pdf": "^2.2.0",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
